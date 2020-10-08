@@ -34,3 +34,45 @@
       color:darkblue;
       margin-left:50px;
     }
+
+    main.idk div{
+      color:darkgreen;
+      font-family: 'Courier New';
+    }
+    ul,ol{
+      text-decoration:underline;
+    }
+
+    article > h1{
+      color:red;
+    }
+
+
+    h1 + p{
+      font-size:larger;
+    }
+
+
+    main.idk p:first-letter{
+      color: green;
+      font-size:x-large;
+    }
+
+    p:nth-child(3){
+      background-color:lightblue;
+    }
+
+    .class1{
+      background-color:lightblue;
+    }
+    .class2{
+      font-size:24px;
+    }
+    /*.class3{
+      font-family:Verdana;
+      fon-size:smaller;
+    }*/
+
+    tr[class*='class3']{
+      background-color:red;
+    }

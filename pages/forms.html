@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>this user form</title>
+  <style>
+    fieldset{
+      border:3px dashed green;
+      padding:20px;
+      margin:20px;
+      width:400px;
+    }
+    legend{
+      font-family:Verdana;
+      color:lightgreen;
+      background-color:darkgreen;
+    }
+    label{
+      display:block;
+      /*background-color:lightgrey;*/
+      /*width:400;*/
+      margin-top:5px;
+      margin-bottom:5px;
+      clear:both;
+    }
+    input,select{
+      float:right;
+      width:150px;
+      box-sizing:border-box;
+    }
+
+    input[type="checkbox"],input[type="radio"]{
+        width:unset;
+        float:unset;
+    }
+    input[type="submit"],input[type="reset"]{
+      float:unset;
+      width:100px;
+      margin-left:50px;
+    }
+
+    textarea{
+      width:100%;
+      height:100px;
+    }
+  </style>
+</head>
+<body>
+<form action="#" method="GET">
+<fieldset>
+<legend>Contact info</legend>
+  <label for="firstName">First Name:
+    <input type="text" id="firstName" name="firstName" placeholder="your first name" required>
+  </label>
+  <label for="lastName">Last Name:
+    <input type="text" id="lastName" name="lastName" placeholder="your last name" required>
+  </label>
+  <label for="email">Email:
+    <input type="email" id="email" name="email" placeholder="name@mail.com" required>
+  </label>
+  <label for="phone">Phone:
+    <input type="tel" id="phone" name="phone" placeholder="8717753612" required>
+  </label>
+ </fieldset> 
+ <fieldset>
+ <legend>Registration info</legend>
+  <label for="userName">Username:
+    <input type="text" id="userName" name="userName">
+  </label>
+  <label for="password">Password:
+  <input type="Password" id="password" name="password">
+  </label>
+ </fieldset>
+ <fieldset> 
+ <legend>Address</legend>
+  <label for="street">Street:
+    <input type="text" id="street" name="street">
+  </label>
+  <label for="city">City:
+    <input type="text" id="city" name="city">
+  </label>
+  <label for="state">State:
+  <select id="state" name="state">
+    <option value="IL">Illinois</option>
+    <option value="IA">Iowa</option>
+    <option value="MI">Michigan</option>
+  </select>
+  </label>
+  
+  <label for="zip">Zip/Postal code:
+    <input type="text" id="zip" name="zip">
+  </label> 
+  <label for="country">Country:
+  <select id="country" name="country">
+    <option value="US">United States</option>
+    <option value="CA">Canada</option>
+  </select>
+  </label>
+  </fieldset>
+  
+  <fieldset>
+  <legend>Preferences</legend>
+  <label for="receiveNewsletter">Receive Newsleetter?
+    <input type="checkbox" id="receiveNewsletter" name="receiveNewsletter">
+  </label>
+    
+  <p>what is your favorite color?</p>
+  <label for="fcBlue">
+  <input type="radio" value="blue" name="favColor" id="fcBlue">Blue</input>
+  <label for="fcRed">
+  <input type="radio" value="red" name="favColor" id="fcRed">Red</input>
+  <label for="fcGreen">
+  <input type="radio" value="green" name="favColor" id="fcGreen">Green</input>
+  <br/>
+<label for="comments">Comments
+  <textarea id="comments">
+  </textarea>
+  </label>
+  </fieldset>
+  <br/>
+  <input type="submit" >
+  <input type="reset" >
+  </form>
+</body>
+</html>
